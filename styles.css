@@ -1,0 +1,99 @@
+/* ===== Загальні налаштування ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+/* ===== Селектори тегів ===== */
+header {
+  background-color: #1e3a5f;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h2 {
+  margin-top: 0;
+  color: #1e3a5f;
+  border-bottom: 2px solid #1e3a5f;
+  padding-bottom: 8px;
+}
+
+footer {
+  background-color: #1e3a5f;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ===== Селектор класу ===== */
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 400px;
+}
+
+/* ===== Селектор ID ===== */
+#about {
+  flex: 1 1 100%;
+}
+
+#skills {
+  border-left: 5px solid #1e3a5f;
+}
+
+/* ===== Селектори атрибутів ===== */
+a[href^="mailto:"] {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+a[href^="https"] {
+  color: #1e3a5f;
+}
+
+/* ===== Псевдокласи ===== */
+a:hover {
+  text-decoration: none;
+  background-color: #ffe9a8;
+}
+
+.card:hover {
+  border-color: #1e3a5f;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+/* ===== Адаптивність для вузьких екранів ===== */
+@media (max-width: 700px) {
+  .card {
+    flex-basis: 100%;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  main {
+    margin: 10px;
+  }
+}
