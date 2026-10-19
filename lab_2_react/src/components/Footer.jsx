@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <footer>
-      <p>© 2026 Сергій Диблюк</p>
+    <footer className="bg-indigo-900 text-white text-center p-4 mt-8">
+      <p className="text-sm">© 2026 Сергій Диблюк</p>
     </footer>
   );
 }

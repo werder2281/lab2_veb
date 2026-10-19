@@ -10,9 +10,9 @@ function App() {
   const skills = ['Python', 'C#', 'Git', 'HTML', 'React'];
 
   return (
-    <div>
+    <div className="min-h-screen bg-slate-100 text-slate-800">
       <Header />
-      <main>
+      <main className="max-w-4xl mx-auto p-4 grid gap-6 md:grid-cols-2">
         <About />
         <Education />
         <Experience />
